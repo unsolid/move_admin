@@ -55,6 +55,7 @@ class Charts extends React.Component {
     },
   };
 
+
   componentWillUnmount() {
     clearInterval(liveChartInterval);
   }
@@ -64,7 +65,7 @@ class Charts extends React.Component {
     return (
       <div className={s.root}>
         <h1 className="page-title">
-          Visual - <span className="fw-semi-bold">Charts</span>
+          교통 & 에너지소비 DATA
         </h1>
         <div>
           <Row>

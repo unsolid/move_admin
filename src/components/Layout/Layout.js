@@ -11,7 +11,8 @@ import TablesStatic from '../../pages/tables/static';
 import MapsGoogle from '../../pages/components/maps/google';
 import CoreTypography from '../../pages/typography';
 import Charts from '../../pages/components/charts/Charts';
-import Dashboard from '../../pages/dashboard';
+import 출퇴근Case from '../../pages/출퇴근Case';
+import 명절Case from '../../pages/명절Case';
 
 import Header from '../Header';
 import Sidebar from '../Sidebar';
@@ -77,8 +78,9 @@ class Layout extends React.Component {
                   timeout={200}
                 >
                   <Switch>
-                    <Route path="/app/main" exact render={() => <Redirect to="/app/main/dashboard" />} />
-                    <Route path="/app/main/dashboard" exact component={Dashboard} />
+                    <Route path="/app/main" exact render={() => <Redirect to="/app/components/charts" />} />
+                    <Route path="/app/main/출퇴근Case" exact component={출퇴근Case} />
+                    <Route path="/app/main/명절Case" exact component={명절Case} />
                     <Route path="/app/components/icons" exact component={UIIcons} />
                     <Route path="/app/notifications" exact component={UINotifications} />
                     <Route path="/app/components/charts" exact component={Charts} />
